@@ -13,7 +13,7 @@ public class RunBloodData {
         String rhFactor = sc.nextLine();
 
         BloodData bd;
-        if(bloodType == "" || rhFactor == "") {
+        if(bloodType.equals("") || rhFactor.equals("")) {
             bd = new BloodData();
         } else {
             bd = new BloodData(bloodType, rhFactor);

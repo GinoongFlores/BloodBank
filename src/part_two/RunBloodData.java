@@ -16,7 +16,7 @@ public class RunBloodData {
         String rhFactor = sc.nextLine();
         bd.setRhFactor(rhFactor);
 
-        if (bloodType == "" && rhFactor == "") {
+        if (bloodType == "" || rhFactor == "") {
             bd1.display();
         } else {
             System.out.println(bd.getBloodType() + bd.getRhFactor() + " is added to the blood bank.");

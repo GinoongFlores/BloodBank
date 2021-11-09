@@ -12,7 +12,7 @@ public class RunBloodData {
         System.out.print("Enter the Rhesus factor (+ or -): ");
         String rhFactor = sc.nextLine();
 
-        if (bloodType == "" && rhFactor == "") {
+        if (bloodType == "" || rhFactor == "") {
             BloodData bd = new BloodData();
             bd.display();
 
